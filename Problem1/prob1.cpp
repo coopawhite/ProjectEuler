@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include<numeric>
+#include <numeric>
 
 
 int main(){
@@ -10,18 +10,13 @@ int main(){
 
     while(i < number){
 
-        if (i % 3 == 0){
-            arr.push_back(i);
-        }
-
-        else if (i % 5 == 0){
-            arr.push_back(i);
-        }
+        if ((i % 3 == 0) || (i % 5 ==0)){
+            arr.push_back(i);}
+            
         i++;
     }
 
     answer = std::accumulate(arr.begin(), arr.end(), 0);
-
     std::cout<<answer<<std::endl;
 
 
