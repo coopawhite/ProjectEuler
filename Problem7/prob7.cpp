@@ -23,7 +23,7 @@ bool isPrime(int n){
 }
 
 int main(){
-    std::vector<int> primes{1, 2}; //init it with 2 as our algo will not detect 2 as a prime
+    std::vector<int> primes{2}; //init it with 2 as our algo will not detect 2 as a prime
     int n = 3;
 
     while (primes.size() < 10001) 
